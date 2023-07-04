@@ -2,10 +2,13 @@
 
 using AnimalSounds;
 
-var dog = new Dog();
-var cat = new Cat();
-var parrot = new Parrot();
+List<Animal> animalsList = new List<Animal>();
 
-dog.DescribeDog();
-cat.DescribeCat();
-parrot.DescribeParrot();
+animalsList.Add(new Cat());
+animalsList.Add(new Dog());
+animalsList.Add(new Parrot());
+
+foreach (Animal animal in animalsList)
+{
+    animal.DescribeAnimal();
+}
