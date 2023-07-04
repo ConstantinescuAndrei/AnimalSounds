@@ -1,13 +1,8 @@
 namespace AnimalSounds;
 
-public class Parrot
+public class Parrot : Animal
 {
-     public void DescribeParrot()
-        {
-            Console.WriteLine($"{GetType().Name} makes sound {MakeSound()}");
-        }
-    
-        private string MakeSound()
+        public override string MakeSound()
         {
             return "chirps";
         }

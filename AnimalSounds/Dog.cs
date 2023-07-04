@@ -1,13 +1,8 @@
 namespace AnimalSounds;
 
-public class Dog
+public class Dog : Animal
 {
-    public void DescribeDog()
-    {
-        Console.WriteLine($"{GetType().Name} makes sound {MakeSound()}");
-    }
-
-    private string MakeSound()
+    public override string MakeSound()
     {
         return "Ham";
     }
